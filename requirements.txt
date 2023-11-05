@@ -1,4 +1,2 @@
 discord
 pybooru
-dotenv
-os
