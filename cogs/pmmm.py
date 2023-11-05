@@ -1,9 +1,9 @@
 from discord.ext import commands
 from pybooru import Danbooru
-
 import random
+import os
 
-client = Danbooru('danbooru', username='USERNAME', api_key='API_KEY')
+client = Danbooru('danbooru', username=os.getenv('USERNAME'), api_key=os.getenv('API_KEY'))
 
 class MadokaCog(commands.Cog, name = 'Puella Magi Madoka Magica'):
     def __init__(self, bot):
