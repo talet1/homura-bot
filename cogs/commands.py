@@ -3,7 +3,6 @@ from pybooru import Danbooru
 import os
 import random
 
-load_dotenv()
 
 client = Danbooru('danbooru', username=os.getenv('USERNAME'), api_key=os.getenv('API_KEY'))
 
