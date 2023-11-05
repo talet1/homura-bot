@@ -1,10 +1,6 @@
 from discord.ext import commands
 from discord import Intents
-from dotenv import load_dotenv
 import os
-
-load_dotenv()
-
 intents = Intents.all()
 
 def get_prefix(bot, message):

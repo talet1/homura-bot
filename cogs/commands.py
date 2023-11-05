@@ -1,12 +1,10 @@
 from discord.ext import commands
 from pybooru import Danbooru
-from dotenv import load_dotenv
 import os
 import random
 
-load_dotenv()
 
-client = Danbooru('danbooru', username='USERNAME', api_key='API_KEY')
+client = Danbooru('danbooru', username=os.getenv('USERNAME'), api_key=os.getenv('API_KEY'))
 
 class CommandsCog(commands.Cog, name = "Commands"):
     def __init__(self, bot):
